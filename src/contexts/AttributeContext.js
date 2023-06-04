@@ -153,6 +153,7 @@ export const AttributeProvider = ({ children }) => {
     return points >= 70;
   };
 
+  //Characters have 10 + (4 * Intelligence Modifier) points to spend between skills.
   const checkSkillPoints = () => {
     const points = Object.values(attributes).reduce(
       (total, value) => total + value.points,
